@@ -1,0 +1,59 @@
+/* General Styles */
+html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Navbar */
+  .my-navbar {
+    background-color: #333; /* Change the background color as needed */
+  }
+  
+  .my-navbar-item {
+    padding: 10px 15px;
+  }
+  
+  /* Sidebar */
+  .my-sidebar {
+    display: none; /* Initially hidden on small screens */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 3;
+    background-color: #333; /* Change the background color as needed */
+    overflow-y: auto;
+  }
+  
+  /* Main content */
+  .my-main {
+    margin-left: 0; /* Reset margin for small screens */
+    transition: margin-left 0.5s;
+  }
+  
+  /* Add responsive styles using media queries */
+  @media screen and (max-width: 768px) {
+    .my-sidebar {
+      display: block; /* Show sidebar on small screens */
+    }
+  
+    .my-main {
+      margin-left: 0; /* Reset margin for small screens */
+    }
+  }
+  
+  /* Styles for small screens */
+  @media screen and (max-width: 600px) {
+    .my-navbar-item {
+      display: none; /* Hide individual menu items on small screens */
+    }
+  
+    .my-navbar-item.my-button.my-right {
+      display: block; /* Show the menu toggle button on small screens */
+    }
+  
+    .my-top.my-navbar {
+      padding: 10px 15px; /* Increase padding for better touch interaction */
+    }
+  }
+  
